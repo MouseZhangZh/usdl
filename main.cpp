@@ -48,7 +48,10 @@ private:
             case '\f':
             case '\v':
             case '\0': return parse_whitespace(usdl, index);
-            default:   return USDLObject{std::nullptr_t{}};
+            default: {
+                    std::cerr << "maybe something error" << std::endl;
+                    return USDLObject{std::nullptr_t{}};
+                }
         }
         return USDLObject{std::nullptr_t{}};
     }

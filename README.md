@@ -1,5 +1,8 @@
 # USDL
 
+[![CMake on multiple platforms](https://github.com/MouseZhangZh/usdl/actions/workflows/cmake-multi-platform.yml/badge.svg)](https://github.com/MouseZhangZh/usdl/actions/workflows/cmake-multi-platform.yml)
+[![CodeQL](https://github.com/MouseZhangZh/usdl/actions/workflows/codeql.yml/badge.svg)](https://github.com/MouseZhangZh/usdl/actions/workflows/codeql.yml)
+
 ## Introduction
 
 USDL is universal simple data language, which is designed to be easy to parse and easy to use.

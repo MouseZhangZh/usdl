@@ -3,6 +3,7 @@
 #include <map>
 #include <regex>
 #include <variant>
+#include <optional>
 
 #include "file_helper.h"
 #include "test_string.h"

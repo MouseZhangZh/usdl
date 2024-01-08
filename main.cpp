@@ -2,6 +2,7 @@
 #include <iostream>
 #include <map>
 #include <regex>
+#include <variant>
 
 #include "file_helper.h"
 #include "test_string.h"

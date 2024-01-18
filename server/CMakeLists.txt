@@ -1,0 +1,1 @@
+add_executable(usdl_server main.cpp)

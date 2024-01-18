@@ -6,8 +6,6 @@
 #include "utils/file_helper.h"
 #include "utils/test_string.h"
 
-#include "3rd/boost/asio.hpp"
-
 int test_parser() {
     // write and read from file
     FileHelper::writeFile("usdl_test.usdl", g_test_string);
@@ -57,6 +55,5 @@ int test_parser() {
 
 int main() {
     test_parser();
-    boost::asio::io_service io_service;
-    return io_service.run();
+    return 0;
 }

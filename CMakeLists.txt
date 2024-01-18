@@ -3,6 +3,8 @@ project(usdl)
 
 set(CMAKE_CXX_STANDARD 17)
 
+find_package(Boost COMPONENTS system REQUIRED)
+
 include_directories(3rd)
 
 add_subdirectory(server)

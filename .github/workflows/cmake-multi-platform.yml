@@ -54,6 +54,16 @@ jobs:
       run: |
         echo "build-output-dir=${{ github.workspace }}/build" >> "$GITHUB_OUTPUT"
 
+    - name: Install Dependencies
+      # Install any dependencies required by your project here.
+      # For example, if you are using CMake, you might want to install Ninja.
+      run: |
+        if [[ "$RUNNER_OS" == "Linux" ]]; then
+            sudo apt-get install -y ninja-build libboost-all-dev
+        elif [[ "$RUNNER_OS" == "macOS" ]]; then
+            brew install ninja boost
+        fi
+
     - name: Configure CMake
       # Configure CMake in a 'build' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
       # See https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html?highlight=cmake_build_type
